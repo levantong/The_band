@@ -384,6 +384,7 @@ h1, h2, h3, h4, h5, h6{
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
+    animation: modalFadein ease 0.3s;
 }
 .modal_container{
     max-width: 720px;
@@ -438,7 +439,7 @@ h1, h2, h3, h4, h5, h6{
     padding: 6px 12px;
     font-size: 15px;
 }
-.close{
+.modal-close{
     position: absolute;
     float: left;
     top: 0px;
@@ -448,6 +449,9 @@ h1, h2, h3, h4, h5, h6{
     color: white ;
     background-color: transparent;
     border: none;
+}
+.modal.open {
+    display: flex;
 }
 .modal button{
     cursor: pointer;
@@ -459,6 +463,17 @@ h1, h2, h3, h4, h5, h6{
 .modal_footer a{
     color: #2196F3;
 }
-/* .modal.open{
+.modal.open{
     display: flex;
-} */
+}
+@keyframes modalFadein {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+        
+    }
+}
