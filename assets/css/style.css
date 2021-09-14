@@ -6,6 +6,7 @@
 html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'Lato', sans-serif;
