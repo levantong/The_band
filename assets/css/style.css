@@ -169,6 +169,7 @@ button:active{
 }
 .content_header{
     width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 64px 12px;
 }
@@ -183,6 +184,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .content_header p{
     margin: 15px 0;
+    text-align: justify;
 
 }
 .content_img{
@@ -199,12 +201,14 @@ h1, h2, h3, h4, h5, h6{
 /* phần TOUR DATES */
 .tour-dates{
     background-color: black;
-    padding: 64px 0px;
+    padding: 64px 12px;
 
 }
 .tour-cover{
     width: 800px;
     margin: 0 auto;
+    max-width: 100%;
+
 }
 .tour-cover h3{
     font-size: 30px;
@@ -251,6 +255,7 @@ h1, h2, h3, h4, h5, h6{
 /* phần buy tickets */
 .buy-tickets{
     width: 800px;
+    max-width: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 16px;
@@ -293,6 +298,8 @@ h1, h2, h3, h4, h5, h6{
 .contact-main{
     padding: 64px 16px;
     width: 800px;
+    max-width: 100%;
+
     margin: 0 auto;
 }
 .contact-content{
