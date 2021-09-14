@@ -36,6 +36,7 @@
         <div class="search-button">
             <i class="fa fa-search"></i>
         </div>
+        <div id="mobile-menu" class="menu-btn"><i class="fa fa-bars"></i></div>
         <div class="clear"></div>
     </div>
     <div id="carousel">
@@ -203,6 +204,19 @@
         modalContainer.addEventListener('click', function (event){
             event.stopPropagation()
         })
+    </script>
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenu.onclick = function (){
+            var isClose = header.clientHeight === 46;
+            if (isClose) {
+                header.style.height = "auto"
+            } else {
+                header.style.height = "46px"
+            }
+        }
     </script>
 </body>
 </html>

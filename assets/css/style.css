@@ -28,7 +28,7 @@ button:active{
     right: 0;
     left: 0;
     z-index: 100;
-
+    overflow: hidden;
 }
 #nav{
     display: inline-block;
@@ -474,6 +474,16 @@ h1, h2, h3, h4, h5, h6{
 .modal.open{
     display: flex;
 }
+.menu-btn{
+    float: right;
+    color: white;
+    height: 46px;
+    width: 60px;
+    line-height: 46px;
+    font-size: 20px;
+    text-align: center;
+    display: none;
+}
 @keyframes modalFadein {
     from {
         transform: translateY(-100px);
@@ -483,5 +493,22 @@ h1, h2, h3, h4, h5, h6{
         opacity: 1;
         transform: translateY(0px);
         
+    }
+}
+@media (max-width: 740px){
+    #nav>li{
+        display: block;
+    }
+    html{
+        font-size: 12px;
+    }
+    #header .search-button{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .menu-btn:active{
+        background-color: lightgray;
     }
 }
